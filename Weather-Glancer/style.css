@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+    background: linear-gradient(160deg , #343D4A, #323C4B, #343D4C);
+
+}
+
+#Exterior-container{
+    width:900px;
+    height:550px;
+    border-radius: 50px;
+    background-color: #1b2129;
+    
+}
+
+.insider-container{
+    width:49%;
+    height:100%;
+    
+}
+
+
+#rightside-form-displayer{
+    color:white;
+    float: right;
+    justify-items: center;
+    background-color:#1b2129 ;
+    border-radius: 50px;
+
+
+}
+
+#leftside-weather-display{
+    background-color: #5464E8;
+    position: relative;
+    bottom: 55px;
+    border-radius: 50px;
+    height:120%
+
+}
+
+button{
+    width: 300px;
+    height:40px;
+    border-radius: 70px;
+    border: transparent;
+    color: #fff;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top:250px;
+    left:60px;
+    background:linear-gradient(to right, #71EAF7, #6193EC, #5464E8 );
+
+}
+
+button:hover{
+    transform: scale(1.01);
+}
+
+#input{
+    position: relative;
+    width:250px;
+    height:40px;
+    top:150px;
+    left:75px;
+    background-color: transparent;
+    border: 1px solid;
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    color:white;
+    padding-left: 20px;
+}
+
+#input::placeholder{
+    color:white;
+    position:relative;
+}
+
+#input:focus{
+    outline: none;
+    
+}
+
+#input:focus::placeholder{
+    color:transparent;
+}
+
+#right-header{
+    position:relative;
+    top: 100px;
+    right:10px;
+    font-family: 'raleway';
+
+}
+
+#right-para{
+    position: relative;
+    top: 100px;
+    right:10px;
+    font-size: 10px;
+    font-family:'Montserrat';
+
+}
+
+
+#right-head{
+    text-align: center;
+    position:relative;
+    top: 250px;
+    color:white;
+    font-family: 'raleway';
+    font-size: 40px;
+    transition: top 1.5s ease, font-size 1.5s ease;
+}
+
+/* inner values decoration */
+
+#day{
+    font-size: 35px;
+    font-weight: bold;
+    color:white;
+    font-family:'arial' ;
+    position: relative;
+    left: 40px;
+    top: 50px;
+    transition: ease-in 3s;
+}
+
+#date{
+    font-size: 17px;
+    color:white;
+    font-family: 'arial';
+    position:relative;
+    left:42px;
+    top: 40px;
+    transition: ease-in 3s;
+}
+
+#temperature{
+    font-size: 60px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color:white;
+    position:relative;
+    left: 40px;
+    top: 30px;
+    transition: ease-in 3s;
+}
+
+#weather{
+    position: relative;
+    color:white;
+    font-family: 'arial';
+    font-size: 35px;
+    position: relative;
+    left:40px;
+    transition: ease-in 3s;
+    
+}
+
+#place{
+    position: relative;
+    color:white;
+    font-family: 'arial';
+    font-size: 20px;
+    position:relative;
+    left:40px;
+    transition: ease-in 3s;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in; /* Duration and easing function */
+}
+
+.fade-in.active {
+    opacity: 1; /* Fully visible */
+}
+
+#icon-container{
+    position:relative;
+    left:45px;
+    top: 70px;
+}
+
+#icon-container img {
+    filter: brightness(0) invert(1); /* This will change the icon color to white */
+    width: 70px; /* Optional: Set the width of the icon */
+    height: 70px; /* Optional: Set the height of the icon */
+}
